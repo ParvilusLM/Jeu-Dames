@@ -64,11 +64,11 @@ private:
 
 
     //pour menu Apropos
-    //sf::Text m_txtTMAP;
-    //std::ostringstream m_stream_txtTMAP;
+    sf::Text m_txtTMAP;
+    std::ostringstream m_stream_txtTMAP;
 
-    //sf::Text m_txtMAP;
-    //std::ostringstream m_stream_txtMAP;
+    sf::Text m_txtMAP;
+    std::ostringstream m_stream_txtMAP;
 
 
 

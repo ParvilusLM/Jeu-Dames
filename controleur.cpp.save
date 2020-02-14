@@ -11,12 +11,10 @@ Controleur::Controleur(sf::RenderWindow &fenetre):m_fenetre(0),m_decor(0)
 void Controleur::debutJeu()
 {
     fin_partie=false;
-    std::cout<<"Entree dans la fonction Debut Jeu"<<std::endl;
     m_decor->CreationTableDeJeu();
     m_decor->InitInfo();
     m_decor->demarrerHorl();
-    std::cout<<"Sortie dans la fonction Debut Jeu"<<std::endl;
-    
+
 
 }
 
