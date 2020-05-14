@@ -2,47 +2,6 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="info.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="77" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="decor.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="336" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="joueur.cpp" open="1" top="1" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="82562" topLine="1089" />
-		</Cursor>
-		<Folding>
-			<Collapse line="4" />
-			<Collapse line="43" />
-			<Collapse line="98" />
-			<Collapse line="179" />
-			<Collapse line="5301" />
-		</Folding>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4936" topLine="118" />
-		</Cursor>
-		<Folding>
-			<Collapse line="112" />
-			<Collapse line="159" />
-		</Folding>
-	</File>
-	<File name="joueur.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="797" topLine="19" />
-		</Cursor>
-	</File>
-	<File name="decor.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="992" topLine="36" />
-		</Cursor>
-	</File>
 	<File name="constantes.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="69" topLine="0" />
@@ -53,9 +12,9 @@
 			<Cursor1 position="321" topLine="79" />
 		</Cursor>
 	</File>
-	<File name="varGlobales.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="decor.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="286" topLine="10" />
+			<Cursor1 position="336" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="controleur.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -63,9 +22,9 @@
 			<Cursor1 position="600" topLine="7" />
 		</Cursor>
 	</File>
-	<File name="menu.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="decor.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1477" topLine="5" />
+			<Cursor1 position="992" topLine="36" />
 		</Cursor>
 	</File>
 	<File name="menu.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -78,9 +37,49 @@
 			<Cursor1 position="225" topLine="21" />
 		</Cursor>
 	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4936" topLine="118" />
+		</Cursor>
+		<Folding>
+			<Collapse line="112" />
+			<Collapse line="159" />
+		</Folding>
+	</File>
 	<File name="info.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="3083" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="joueur.cpp" open="1" top="1" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="82562" topLine="1089" />
+		</Cursor>
+		<Folding>
+			<Collapse line="4" />
+			<Collapse line="43" />
+			<Collapse line="98" />
+			<Collapse line="179" />
+		</Folding>
+	</File>
+	<File name="joueur.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="797" topLine="19" />
+		</Cursor>
+	</File>
+	<File name="info.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="77" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="menu.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1477" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="varGlobales.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="286" topLine="10" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
