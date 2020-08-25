@@ -941,10 +941,10 @@ bool Decor::MarquageCaseValide()
             if(m_tableJeu.joueurs.at(1).pions.at(comptt).type_pion==pion_B_D)
             {
                 // vecteur representant l'ensemble des cases des differents chemins
-                std::vector<CaseValabe> eChemin;
+                std::vector<CaseValable> eChemin;
 
                 //vecteur pour stocker les cases a tester
-                std::vector<CaseValabe> eCasesATester;
+                std::vector<CaseValable> eCasesATester;
 
                 //boucle semi-infinie
                 int compt2=0;
@@ -952,7 +952,7 @@ bool Decor::MarquageCaseValide()
                 {
                     if(val_a_verif==1)
                     {
-                        CaseValabe eCase;
+                        CaseValable eCase;
                         eCase.valeur_chemin=1;
 
                         int compt3=0;
@@ -1084,7 +1084,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1109,7 +1109,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4+2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1134,7 +1134,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5+2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1159,7 +1159,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4+2;
                                     eCase.positionY=compt5+2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1184,7 +1184,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1205,7 +1205,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4+2;
                                     eCase2.positionY=compt5-2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1232,7 +1232,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1253,7 +1253,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4-2;
                                     eCase2.positionY=compt5+2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1280,7 +1280,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1301,7 +1301,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4+2;
                                     eCase2.positionY=compt5+2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1328,7 +1328,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4+2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1349,7 +1349,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4-2;
                                     eCase2.positionY=compt5+2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1376,7 +1376,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4+2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1397,7 +1397,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4+2;
                                     eCase2.positionY=compt5+2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1424,7 +1424,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5+2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1445,7 +1445,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4+2;
                                     eCase2.positionY=compt5+2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1472,7 +1472,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1493,7 +1493,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4+2;
                                     eCase2.positionY=compt5-2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1514,7 +1514,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase3;
+                                    CaseValable eCase3;
                                     eCase3.positionX=compt4-2;
                                     eCase3.positionY=compt5+2;
                                     eCase3.valeur_chemin=val_a_verif+1;
@@ -1541,7 +1541,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1562,7 +1562,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4+2;
                                     eCase2.positionY=compt5-2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1583,7 +1583,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase3;
+                                    CaseValable eCase3;
                                     eCase3.positionX=compt4+2;
                                     eCase3.positionY=compt5+2;
                                     eCase3.valeur_chemin=val_a_verif+1;
@@ -1610,7 +1610,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4-2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1631,7 +1631,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4-2;
                                     eCase2.positionY=compt5+2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1652,7 +1652,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase3;
+                                    CaseValable eCase3;
                                     eCase3.positionX=compt4+2;
                                     eCase3.positionY=compt5+2;
                                     eCase3.valeur_chemin=val_a_verif+1;
@@ -1679,7 +1679,7 @@ bool Decor::MarquageCaseValide()
                                 {
                                     tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                                    CaseValabe eCase;
+                                    CaseValable eCase;
                                     eCase.positionX=compt4+2;
                                     eCase.positionY=compt5-2;
                                     eCase.valeur_chemin=val_a_verif+1;
@@ -1700,7 +1700,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase2;
+                                    CaseValable eCase2;
                                     eCase2.positionX=compt4-2;
                                     eCase2.positionY=compt5+2;
                                     eCase2.valeur_chemin=val_a_verif+1;
@@ -1721,7 +1721,7 @@ bool Decor::MarquageCaseValide()
 
                                     tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                                    CaseValabe eCase3;
+                                    CaseValable eCase3;
                                     eCase3.positionX=compt4+2;
                                     eCase3.positionY=compt5+2;
                                     eCase3.valeur_chemin=val_a_verif+1;

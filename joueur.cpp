@@ -2388,13 +2388,13 @@ bool JoueurC::JeuPossibleDame(TableJeu &table_jeu)
     bool possible=false;
 
         // vecteur representant l'ensemble des cases des differents chemins
-        std::vector<CaseValabe> eChemin;
+        std::vector<CaseValable> eChemin;
 
         //vecteur pour stocker les cases a tester
-        std::vector<CaseValabe> eCasesATester;
+        std::vector<CaseValable> eCasesATester;
 
         //vector pour le chemin choisi
-        std::vector<CaseValabe> eCaseChemChoisi;
+        std::vector<CaseValable> eCaseChemChoisi;
 
         //valeur initial a verifier
         int val_a_verif=1;
@@ -2506,7 +2506,7 @@ bool JoueurC::JeuPossibleDame(TableJeu &table_jeu)
 
                        if(val_a_verif==1)
                        {
-                          CaseValabe eCase;
+                          CaseValable eCase;
                           eCase.valeur_chemin=1;
 
                           int cmp=0;
@@ -2608,7 +2608,7 @@ bool JoueurC::JeuPossibleDame(TableJeu &table_jeu)
                                {
                                    tableau_virtuel[compteur3-2][compteur4+2]=val_a_verif+1;
 
-                                   CaseValabe eCase;
+                                   CaseValable eCase;
                                    eCase.positionX=compteur3-2;
                                    eCase.positionY=compteur4+2;
                                    eCase.valeur_chemin=val_a_verif+1;
@@ -2626,7 +2626,7 @@ bool JoueurC::JeuPossibleDame(TableJeu &table_jeu)
                                {
                                    tableau_virtuel[compteur3+2][compteur4+2]=val_a_verif+1;
 
-                                   CaseValabe eCase;
+                                   CaseValable eCase;
                                    eCase.positionX=compteur3+2;
                                    eCase.positionY=compteur4+2;
                                    eCase.valeur_chemin=val_a_verif+1;
@@ -2644,7 +2644,7 @@ bool JoueurC::JeuPossibleDame(TableJeu &table_jeu)
                                {
                                    tableau_virtuel[compteur3-2][compteur4+2]=val_a_verif+1;
 
-                                   CaseValabe eCase;
+                                   CaseValable eCase;
                                    eCase.positionX=compteur3-2;
                                    eCase.positionY=compteur4+2;
                                    eCase.valeur_chemin=val_a_verif+1;
@@ -2659,7 +2659,7 @@ bool JoueurC::JeuPossibleDame(TableJeu &table_jeu)
                                {
                                    tableau_virtuel[compteur3+2][compteur4+2]=val_a_verif+1;
 
-                                   CaseValabe eCase;
+                                   CaseValable eCase;
                                    eCase.positionX=compteur3+2;
                                    eCase.positionY=compteur4+2;
                                    eCase.valeur_chemin=val_a_verif+1;
@@ -2812,13 +2812,13 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
     bool possible=false;
 
         // vecteur representant l'ensemble des cases des differents chemins
-        std::vector<CaseValabe> eChemin;
+        std::vector<CaseValable> eChemin;
 
         //vecteur pour stocker les cases a tester
-        std::vector<CaseValabe> eCasesATester;
+        std::vector<CaseValable> eCasesATester;
 
         //vector pour le chemin choisi
-        std::vector<CaseValabe> eCaseChemChoisi;
+        std::vector<CaseValable> eCaseChemChoisi;
 
         //valeur initial a verifier
         int val_a_verif=1;
@@ -2908,7 +2908,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
         {
             if(val_a_verif==1)
             {
-                CaseValabe eCase;
+                CaseValable eCase;
                 eCase.valeur_chemin=1;
 
                 int compt3=0;
@@ -3037,7 +3037,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3062,7 +3062,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3087,7 +3087,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5+2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3112,7 +3112,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5+2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3137,7 +3137,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3158,7 +3158,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5-2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3185,7 +3185,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3206,7 +3206,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4-2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3233,7 +3233,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3254,7 +3254,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3281,7 +3281,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3302,7 +3302,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4-2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3329,7 +3329,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3350,7 +3350,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3377,7 +3377,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5+2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3398,7 +3398,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3425,7 +3425,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3446,7 +3446,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5-2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3467,7 +3467,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase3;
+                            CaseValable eCase3;
                             eCase3.positionX=compt4-2;
                             eCase3.positionY=compt5+2;
                             eCase3.valeur_chemin=val_a_verif+1;
@@ -3494,7 +3494,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3515,7 +3515,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5-2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3536,7 +3536,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase3;
+                            CaseValable eCase3;
                             eCase3.positionX=compt4+2;
                             eCase3.positionY=compt5+2;
                             eCase3.valeur_chemin=val_a_verif+1;
@@ -3563,7 +3563,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3584,7 +3584,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4-2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3605,7 +3605,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase3;
+                            CaseValable eCase3;
                             eCase3.positionX=compt4+2;
                             eCase3.positionY=compt5+2;
                             eCase3.valeur_chemin=val_a_verif+1;
@@ -3632,7 +3632,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -3653,7 +3653,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4-2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -3674,7 +3674,7 @@ bool JoueurC::ia_PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase3;
+                            CaseValable eCase3;
                             eCase3.positionX=compt4+2;
                             eCase3.positionY=compt5+2;
                             eCase3.valeur_chemin=val_a_verif+1;
@@ -3859,13 +3859,13 @@ bool JoueurC::PossibiliteCapture(TableJeu &table_jeu)
     bool possible=false;
 
         // vecteur representant l'ensemble des cases des differents chemins
-        std::vector<CaseValabe> eChemin;
+        std::vector<CaseValable> eChemin;
 
         //vecteur pour stocker les cases a tester
-        std::vector<CaseValabe> eCasesATester;
+        std::vector<CaseValable> eCasesATester;
 
         //vector pour le chemin choisi
-        std::vector<CaseValabe> eCaseChemChoisi;
+        std::vector<CaseValable> eCaseChemChoisi;
 
         //valeur initial a verifier
         int val_a_verif=1;
@@ -3940,7 +3940,7 @@ bool JoueurC::PossibiliteCapture(TableJeu &table_jeu)
 
                        if(val_a_verif==1)
                        {
-                          CaseValabe eCase;
+                          CaseValable eCase;
                           eCase.valeur_chemin=1;
 
                           int cmp=0;
@@ -4042,7 +4042,7 @@ bool JoueurC::PossibiliteCapture(TableJeu &table_jeu)
                            {
                                tableau_virtuel[compteur3-2][compteur4-2]=val_a_verif+1;
 
-                               CaseValabe eCase;
+                               CaseValable eCase;
                                eCase.positionX=compteur3-2;
                                eCase.positionY=compteur4-2;
                                eCase.valeur_chemin=val_a_verif+1;
@@ -4060,7 +4060,7 @@ bool JoueurC::PossibiliteCapture(TableJeu &table_jeu)
                            {
                                tableau_virtuel[compteur3+2][compteur4-2]=val_a_verif+1;
 
-                               CaseValabe eCase;
+                               CaseValable eCase;
                                eCase.positionX=compteur3+2;
                                eCase.positionY=compteur4-2;
                                eCase.valeur_chemin=val_a_verif+1;
@@ -4078,7 +4078,7 @@ bool JoueurC::PossibiliteCapture(TableJeu &table_jeu)
                            {
                                tableau_virtuel[compteur3-2][compteur4-2]=val_a_verif+1;
 
-                               CaseValabe eCase;
+                               CaseValable eCase;
                                eCase.positionX=compteur3-2;
                                eCase.positionY=compteur4-2;
                                eCase.valeur_chemin=val_a_verif+1;
@@ -4093,7 +4093,7 @@ bool JoueurC::PossibiliteCapture(TableJeu &table_jeu)
                            {
                                tableau_virtuel[compteur3+2][compteur4-2]=val_a_verif+1;
 
-                               CaseValabe eCase;
+                               CaseValable eCase;
                                eCase.positionX=compteur3+2;
                                eCase.positionY=compteur4-2;
                                eCase.valeur_chemin=val_a_verif+1;
@@ -4231,13 +4231,13 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
     bool possible=false;
 
         // vecteur representant l'ensemble des cases des differents chemins
-        std::vector<CaseValabe> eChemin;
+        std::vector<CaseValable> eChemin;
 
         //vecteur pour stocker les cases a tester
-        std::vector<CaseValabe> eCasesATester;
+        std::vector<CaseValable> eCasesATester;
 
         //vector pour le chemin choisi
-        std::vector<CaseValabe> eCaseChemChoisi;
+        std::vector<CaseValable> eCaseChemChoisi;
 
         //valeur initial a verifier
         int val_a_verif=1;
@@ -4310,7 +4310,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
         {
             if(val_a_verif==1)
             {
-                CaseValabe eCase;
+                CaseValable eCase;
                 eCase.valeur_chemin=1;
 
                 int compt3=0;
@@ -4439,7 +4439,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4464,7 +4464,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4489,7 +4489,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5+2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4514,7 +4514,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5+2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4539,7 +4539,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4560,7 +4560,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5-2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -4587,7 +4587,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4608,7 +4608,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4-2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -4635,7 +4635,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4656,7 +4656,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -4683,7 +4683,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4704,7 +4704,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4-2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -4731,7 +4731,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4752,7 +4752,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -4779,7 +4779,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5+2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4800,7 +4800,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -4827,7 +4827,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4848,7 +4848,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5-2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -4869,7 +4869,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase3;
+                            CaseValable eCase3;
                             eCase3.positionX=compt4-2;
                             eCase3.positionY=compt5+2;
                             eCase3.valeur_chemin=val_a_verif+1;
@@ -4896,7 +4896,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4917,7 +4917,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4+2;
                             eCase2.positionY=compt5-2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -4938,7 +4938,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase3;
+                            CaseValable eCase3;
                             eCase3.positionX=compt4+2;
                             eCase3.positionY=compt5+2;
                             eCase3.valeur_chemin=val_a_verif+1;
@@ -4965,7 +4965,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4-2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4-2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -4986,7 +4986,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4-2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -5007,7 +5007,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase3;
+                            CaseValable eCase3;
                             eCase3.positionX=compt4+2;
                             eCase3.positionY=compt5+2;
                             eCase3.valeur_chemin=val_a_verif+1;
@@ -5034,7 +5034,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
                         {
                             tableau_virtuel[compt4+2][compt5-2]=val_a_verif+1;
 
-                            CaseValabe eCase;
+                            CaseValable eCase;
                             eCase.positionX=compt4+2;
                             eCase.positionY=compt5-2;
                             eCase.valeur_chemin=val_a_verif+1;
@@ -5055,7 +5055,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4-2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase2;
+                            CaseValable eCase2;
                             eCase2.positionX=compt4-2;
                             eCase2.positionY=compt5+2;
                             eCase2.valeur_chemin=val_a_verif+1;
@@ -5076,7 +5076,7 @@ bool JoueurC::PossibiliteCaptureDame(TableJeu &table_jeu)
 
                             tableau_virtuel[compt4+2][compt5+2]=val_a_verif+1;
 
-                            CaseValabe eCase3;
+                            CaseValable eCase3;
                             eCase3.positionX=compt4+2;
                             eCase3.positionY=compt5+2;
                             eCase3.valeur_chemin=val_a_verif+1;

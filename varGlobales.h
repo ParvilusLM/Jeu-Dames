@@ -48,7 +48,7 @@ struct TableJeu
   std::vector<Joueur> joueurs;
 };
 
-struct CaseValabe
+struct CaseValable
 {
     int positionX;
     int positionY;
@@ -58,12 +58,12 @@ struct CaseValabe
     bool a_droite;
     bool b_a_droite;
 
-    bool i_d_h_g;
+    bool i_d_h_g;//pour savoir la position precedente de la piece
     bool i_d_h_d;
     bool i_d_b_g;
     bool i_d_b_d;
 
-    bool mouv_h_g;
+    bool mouv_h_g;//pour savoir ou va aller la piece
     bool mouv_h_d;
     bool mouv_b_g;
     bool mouv_b_d;
